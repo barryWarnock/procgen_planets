@@ -177,7 +177,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5000
+  orthographic size: 800
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -222,6 +222,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   angle: 0
+  zoomScale: 1.2
+  speed: 30
+  minSize: 100
+  maxScale: 1.5
 --- !u!1 &1584337534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5791967332912449609, guid: 8af23cea8d0ce6c11bda8f261057c4ce,
@@ -284,6 +288,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936951531997123635, guid: a63bf9f0f63b2958b9e3acc17cb560ec,
+        type: 3}
+      propertyPath: orthographic size
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936951531997123635, guid: a63bf9f0f63b2958b9e3acc17cb560ec,
+        type: 3}
+      propertyPath: orthographic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936951531997123634, guid: a63bf9f0f63b2958b9e3acc17cb560ec,
         type: 3}

@@ -35,7 +35,7 @@ public class PlanetGen : MonoBehaviour
         theta = 365f/numVertices;
 
         for (float rot=0; rot < 365; rot += theta) {
-            Vector3 newVertex = Quaternion.AngleAxis(rot, Vector3.back) * (Vector3.up * maxHeight);
+            Vector3 newVertex = Planet.PolarCoord(rot, maxHeight);
             chunkBoundaries.Add(newVertex);
         }
 
